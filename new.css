@@ -1,0 +1,50 @@
+.orange,.white,.green{
+    height: 33.33vh;
+    width: 0;
+    position: absolute;
+    z-index: -5;
+    animation: start 2s forwards;
+}
+.orange{
+    background: linear-gradient(to bottom,#ff8011,#ffae4a);
+    top:0;left: 0;
+}
+.ashok-chakra{
+    align-items: center;
+    display: flex;
+
+}
+.white{
+    background: white;
+    top: 33.33vh;
+    right: 0;;
+}
+.green{
+    background: linear-gradient(to bottom,#75fc3b,#46ad1b);
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes start{
+    100%{
+        width: 100%;
+
+    }
+}
+.ashok-chakra {
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 50%;
+    width: 0;
+    animation: spin 3s 2s linear infinite;
+}
+@keyframes spin{
+    0%{
+        width: 30vmin;
+    }
+    100%{
+        width: 30vmin;
+        transform: translate(-50% , -50%) rotate(360deg);
+    }
+}

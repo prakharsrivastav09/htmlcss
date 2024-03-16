@@ -1,0 +1,38 @@
+.prakhar{
+    /* width: -500px;
+    height: 500px; */
+    width: 1676px;
+    height: 1196px;
+    align-items: center;
+    background-color: aqua;
+    
+}
+.progress {
+    width: 676px;
+    height: 96px;
+    position: absolute;
+    top: 50%;
+    left: 10;
+    transform: translateY(-50%);
+    animation: progress-move 10s linear infinite;
+  }
+  
+  @keyframes progress-move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 50px);
+    }
+  }
+  
+  @keyframes prakhar-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  
